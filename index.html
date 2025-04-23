@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tanishka Bhor – Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #e6f0ff;
+      color: #333;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    .navbar {
+      background-color: #3399ff;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar a {
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    .navbar a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    header {
+      background-color: #cce0ff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.2em;
+    }
+    header p.subtitle {
+      font-size: 1.1em;
+      color: #555;
+      margin: 0 0 15px;
+    }
+    .header-buttons {
+      margin-top: 10px;
+    }
+    .button {
+      display: inline-block;
+      margin: 5px 8px;
+      padding: 8px 16px;
+      background-color: #3399ff;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #3366cc;
+      border-bottom: 2px solid #3399ff;
+      padding-bottom: 5px;
+    }
+    ul { list-style: none; padding: 0; }
+    ul li { margin: 8px 0; }
+
+    #certificates ul li a {
+      color: #3399ff;
+    }
+
+    #education {
+      background-color: #1f3a93;
+      color: #fff;
+    }
+    #education h2 {
+      color: #fff;
+      border-color: #fff;
+    }
+    #education ul li {
+      background-color: #a8cfff; /* lighter blue */
+      color: #001f4d;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    form input[type="email"] {
+      padding: 10px;
+      width: 70%;
+      box-sizing: border-box;
+      margin-right: 10px;
+    }
+    form label {
+      display: block;
+      margin: 15px 0;
+    }
+    form button {
+      padding: 10px 20px;
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #cce0ff;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer-content p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+    .footer-content label {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+    .footer-content input[type="checkbox"] {
+      margin-right: 6px;
+    }
+
+    /* Language section bars */
+    .language-bar {
+      margin-bottom: 15px;
+    }
+    .language-label {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .bar {
+      background-color: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 16px;
+    }
+    .bar-fill {
+      height: 100%;
+      text-align: right;
+      color: #fff;
+      padding-right: 8px;
+      font-size: 0.85em;
+      line-height: 16px;
+      border-radius: 20px;
+    }
+    .eng { width: 100%; background-color: #3399ff; }
+    .mar { width: 100%; background-color: #66cc66; }
+    .hin { width: 80%; background-color: #ffcc66; }
+    .span { width: 40%; background-color: #ff6666; }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <header id="home">
+    <img src="tanu.jpeg" alt="Tanishka Bhor" class="profile-pic" />
+    <h1>Tanishka Bhor</h1>
+    <p class="subtitle">First Year Computer Engineering Student at MITAOE</p>
+    <div class="header-buttons">
+      <a href="https://www.linkedin.com/in/tanishka-bhor-b67a49360" target="_blank" class="button">LinkedIn</a>
+      <a href="mailto:202401040132@mitaoe.ac.in" class="button">Email</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m Tanishka Bhor, a first‑year Computer Engineering student at MITAOE. I’m passionate
+        about coding, open‑source, and building projects that solve real‑world problems.
+        When I’m not studying algorithms or data structures, I enjoy exploring web design,
+        dabbling in Linux environments, and participating in tech workshops. My goal is to
+        leverage technology to create impactful solutions and continue learning every day.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>C Programming</li>
+        <li>HTML & CSS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="languages">
+    <div class="container">
+      <h2>Languages</h2>
+      <div class="language-bar">
+        <div class="language-label">English</div>
+        <div class="bar"><div class="bar-fill eng">Fluent</div></div>
+      </div>
+      <div class="language-bar">
+        <div class="language-label">Marathi</div>
+        <div class="bar"><div class="bar-fill mar">Native</div></div>
+      </div>
+      <div class="language-bar">
+        <div class="language-label">Hindi</div>
+        <div class="bar"><div class="bar-fill hin">Advanced</div></div>
+      </div>
+      <div class="language-bar">
+        <div class="language-label">Spanish</div>
+        <div class="bar"><div class="bar-fill span">Basic</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="container">
+      <h2>Certificates</h2>
+      <ul>
+        <li><a href="https://drive.google.com/file/d/167vAYXCklSQlubI0fd8lFb3Zf0W4CMrb/view?usp=drivesdk" target="_blank">Cisco Certificate (PDF)</a></li>
+        <li><a href="https://drive.google.com/file/d/1sfEGPkTv7jjr2R7Am_o1aR35DD-aHgrt/view?usp=drivesdk" target="_blank">NASSCOM Certificate (PDF)</a></li>
+        <li><a href="#" download>Linux Certificate (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <ul>
+        <li>10th: 93.40% <a href="https://drive.google.com/file/d/15qf7UW23bfQ-4r8_GLjy9FIKx2j2rb86/view?usp=drivesdk" target="_blank">[View Certificate]</a></li>
+        <li>12th: 82.17% <a href="https://drive.google.com/file/d/164dKJWaTLLHycO_V2XyHd7SV9s3yS9B6/view?usp=drivesdk" target="_blank">[View Certificate]</a></li>
+        <li>JEE Mains: 85 <a href="https://drive.google.com/file/d/1-zihx41Ad2vA8qRs4_N8hbtItKlOgwgh/view?usp=drivesdk" target="_blank">[View Certificate]</a></li>
+        <li>CET: 97.12 <a href="https://drive.google.com/file/d/1-jAzxPFMS1Hc9rWxU94uY-3NdDhQYoBs/view?usp=drivesdk" target="_blank">[View Certificate]</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="email" placeholder="Your Email" required />
+        <label>
+          <input type="checkbox" required />
+          I agree to be contacted
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Tanishka Bhor</p>
+      <p>Email: 202401040132@mitaoe.ac.in | Phone: +91-XXXXXXXXXX</p>
+      <label>
+        <input type="checkbox" />
+        Subscribe to updates
+      </label>
+    </div>
+  </footer>
+
+</body>
+</html>
